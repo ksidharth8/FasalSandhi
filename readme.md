@@ -41,23 +41,19 @@ The Contract Farming Marketplace is a comprehensive online platform that connect
 
     ```bash
     npm install
+    npm install -D tailwindcss postcss autoprefixer vite
+    npx tailwindcss init -p
     ```
 
-4. Set up environment variables in a `.env` file:
-
-    ```
-    MONGO_URI=your_mongo_db_uri
-    JWT_SECRET=your_jwt_secret
-    STRIPE_API_KEY=your_stripe_api_key
-    ```
-
-5. Start the development server:
+4. Start the development server:
 
     ```bash
-    npm run dev
+    npm run start
     ```
 
-The platform will now be running at `http://localhost:3000`.
+Goto [http://localhost:5173](http://localhost:5173)
+
+Facing any issue: [Documentation](https://tailwindcss.com/docs/installation/using-postcss)
 
 ### Frontend Setup (Optional)
 If using React or another frontend framework, navigate to the `client` folder and install dependencies:
@@ -65,15 +61,4 @@ If using React or another frontend framework, navigate to the `client` folder an
 ```bash
 cd client
 npm install
-
-
-<!-- **Step 1:** To run:
-
-```bash
-npm install
-npm run start
 ```
-
-**Step 2:** Goto [http://localhost:5173](http://localhost:5173)
-
-Facing any issue: [Documentation](https://tailwindcss.com/docs/installation/using-postcss) -->
