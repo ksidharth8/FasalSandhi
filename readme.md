@@ -19,11 +19,6 @@ The Contract Farming Marketplace is a comprehensive online platform that connect
 
 ## Getting Started
 
-### Prerequisites
-- **Node.js**: Make sure you have Node.js installed on your machine. You can download it from [Node.js](https://nodejs.org/).
-- **MongoDB**: Set up a local or cloud MongoDB instance for database operations.
-- **Payment Gateway**: You'll need to set up a Stripe or PayPal account to handle payments.
-
 ### Installation
 1. Clone the repository:
 
