@@ -19,6 +19,9 @@ The Contract Farming Marketplace is a comprehensive online platform that connect
 
 ## Getting Started
 
+### Prerequisites
+- **Node.js**: Make sure you have Node.js installed on your machine. You can download it from [Node.js](https://nodejs.org/).
+
 ### Installation
 1. Clone the repository:
 

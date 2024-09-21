@@ -6,64 +6,58 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>FasalSandhi</title>
 		<link rel="stylesheet" href="./main.css" />
-
-        <style>
-            /* Make the dropdown horizontal */
-            .goog-te-combo {
-              background-color: #2d2d2d; /* Dark background */
-              color: #ffffff; /* White text */
-              border: 1px solid #444444; /* Dark border */
-              padding: 5px; /* Add padding */
-              border-radius: 5px; /* Rounded corners */
-              font-size: 14px; /* Font size */
-            }
-          
-            .goog-te-combo:focus {
-              outline: none; /* Remove default focus outline */
-            }
-          
-            .goog-logo-link {
-              display: none !important; /* Hide Google Translate branding */
-            }
-          </style>
-
 	</head>
 
-	<body
-		class="text-gray-900"
-		style="
-			background-image: url(/Images/background-img.jpeg);
-			background-size: cover;
-			background-position: center;
-		"
-	>
+	<body class="text-gray-900">
 		<!-- Navbar -->
 		<nav class="bg-[rgb(103,129,97)] bg-opacity-100 shadow-lg py-4">
 			<div class="container mx-auto flex justify-between items-center px-4">
-				<div class="text-2xl font-bold text-[#EEF1D8]">FasalSandhi</div>
+				<div class="flex">
+					<!-- Logo and Site Name -->
+					<a href="index.html" class="flex items-center">
+						<img
+							src="assets/Images/logo.png"
+							alt="Logo"
+							class="h-10 w-10 mr-2 rounded-full"
+						/>
+						<span class="text-2xl font-bold text-gray-800"
+							>FasalSandhi</span
+						>
+					</a>
+				</div>
 				<ul class="flex space-x-6 text-lg">
 					<li>
-						<a href="#" class="text-[#EEF1D8] hover:text-blue-500"
+						<a
+							href="index.html"
+							class="text-[#EEF1D8] hover:text-blue-500"
 							>Home</a
 						>
 					</li>
 					<li>
-						<a href="#" class="text-[#EEF1D8] hover:text-blue-500"
+						<a
+							href="farmer-dashboard.html"
+							class="text-[#EEF1D8] hover:text-blue-500"
+							onclick="window.open('contractor-dashboard.html');
+    "
 							>Marketplace</a
 						>
 					</li>
 					<li>
-						<a href="#" class="text-[#EEF1D8] hover:text-blue-500"
+						<a href="blog.html" class="text-[#EEF1D8] hover:text-blue-500"
 							>Blog</a
 						>
 					</li>
 					<li>
-						<a href="#" class="text-[#EEF1D8] hover:text-blue-500"
+						<a
+							href="about.html"
+							class="text-[#EEF1D8] hover:text-blue-500"
 							>About Us</a
 						>
 					</li>
 					<li>
-						<a href="#" class="text-[#EEF1D8] hover:text-blue-500"
+						<a
+							href="contact.html"
+							class="text-[#EEF1D8] hover:text-blue-500"
 							>Contact Us</a
 						>
 					</li>
@@ -71,25 +65,39 @@
 			</div>
 		</nav>
 		<!-- Main Section: Quote and Login/Register -->
-		<section class="flex justify-between items-center py-20 px-10">
+		<section
+			class="flex justify-evenly items-center py-20 px-10"
+			style="
+				background-image: url(assets/Images/background-img.jpeg);
+				background-size: cover;
+				background-position: center;
+			"
+		>
 			<!-- Quote Section -->
-			<div class="max-w-md bg-white bg-opacity-80 p-8 rounded-lg shadow-lg">
+			<div
+				class="max-w-md bg-[#FDFFC6] bg-opacity-80 p-8 rounded-lg shadow-lg"
+			>
 				<h1 class="text-4xl font-bold text-gray-900">
-					Ensuring Secure Market Access for Farmers
+					Ensuring Secure and Stable Market Access for Farmers
 				</h1>
+				<br />
 				<p class="mt-4 text-lg text-gray-700">
 					Welcome to FasalSandhi, a platform designed to connect farmers
 					and buyers through assured contract farming agreements. Our tools
 					ensure transparent communication, secure contracts, and timely
-					payments for a stable farming ecosystem.
+					payments for a stable farming ecosystem. Join us today to explore
+					new opportunities and grow your business.
 				</p>
 			</div>
 
 			<!-- Login/Register Section -->
-			<div class="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
+			<div id="loginRegister"
+				class="w-full max-w-md bg-[#FDFFC6] bg-opacity-[0.85] p-8 rounded-lg shadow-lg"
+			>
 				<!-- Login Form -->
-				<div id="loginForm">
-					<h2 class="text-2xl font-semibold mb-6">Login</h2>
+				<div id="loginForm" class="h-[570px]">
+					<br><br><br>
+					<h2 class="text-2xl font-semibold mb-6 text-center">Login</h2>
 					<form>
 						<div class="mb-4">
 							<label class="block mb-2 font-medium" for="usernameEmail"
@@ -141,29 +149,18 @@
 				</div>
 
 				<!-- Register Form (Hidden by Default) -->
-				<div id="registerForm" class="hidden">
-					<h2 class="text-2xl font-semibold mb-6">Register</h2>
+				<div id="registerForm" class="hidden h-[570px]">
+					<h2 class="text-2xl font-semibold mb-6 text-center">Register</h2>
 					<form>
 						<div class="mb-4">
-							<label class="block mb-2 font-medium" for="firstName"
-								>First Name</label
+							<label class="block mb-2 font-medium" for="Name"
+								>Name</label
 							>
 							<input
 								type="text"
-								id="firstName"
+								id="Name"
 								class="w-full border border-gray-300 rounded-lg p-2"
-								placeholder="Enter your first name"
-							/>
-						</div>
-						<div class="mb-4">
-							<label class="block mb-2 font-medium" for="lastName"
-								>Last Name</label
-							>
-							<input
-								type="text"
-								id="lastName"
-								class="w-full border border-gray-300 rounded-lg p-2"
-								placeholder="Enter your last name"
+								placeholder="Enter your name"
 							/>
 						</div>
 						<div class="mb-4">
@@ -190,17 +187,49 @@
 								placeholder="Create a password"
 							/>
 						</div>
+						<!-- Select Role (Farmer or Contractor) -->
 						<div class="mb-4">
-							<label class="block mb-2 font-medium" for="userRole"
-								>Select an Option</label
+							<label for="role" class="block mb-2 font-medium"
+								>Select Role</label
 							>
 							<select
-								id="userRole"
-								class="w-full border border-gray-300 rounded-lg p-2"
+								id="role"
+								name="role"
+								required
+								class="mt-1 block w-full border border-gray-300 rounded-lg p-2 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
 							>
+								<option value="">Select an option</option>
 								<option value="farmer">Farmer</option>
 								<option value="contractor">Contractor</option>
 							</select>
+						</div>
+
+						<!-- Aadhar Number (for Farmers) -->
+						<div id="aadhar-field" class="hidden mb-4">
+							<label for="aadhar" class="block mb-2 font-medium"
+								>Aadhar Number</label
+							>
+							<input
+								id="aadhar"
+								name="aadhar"
+								type="text"
+								class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+								placeholder="Enter your Aadhar Number"
+							/>
+						</div>
+
+						<!-- FSSAI License Number (for Contractors) -->
+						<div id="fssai-field" class="hidden mb-4">
+							<label for="fssai" class="block mb-2 font-medium"
+								>FSSAI License Number</label
+							>
+							<input
+								id="fssai"
+								name="fssai"
+								type="text"
+								class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+								placeholder="Enter your FSSAI License Number"
+							/>
 						</div>
 						<button
 							type="submit"
@@ -243,24 +272,30 @@
 		</script>
 
 		<!-- Footer -->
-		<footer class="bg-gray-800 text-white py-6 mt-12">
+		<footer class="bg-[#737154] text-white py-2 h-28">
 			<div class="container mx-auto px-4">
-				<div class="flex justify-between items-center">
+				<div class="flex justify-around items-center">
 					<!-- Footer Links -->
 					<div>
 						<ul class="space-y-2">
 							<li>
-								<a href="#" class="hover:text-blue-400"
+								<a href="terms.html" class="hover:text-blue-400 text-lg"
 									>Terms & Conditions</a
 								>
 							</li>
 							<li>
-								<a href="#" class="hover:text-blue-400"
+								<a
+									href="privacy.html"
+									class="hover:text-blue-400 text-lg"
 									>Privacy Policy</a
 								>
 							</li>
 							<li>
-								<a href="#" class="hover:text-blue-400">Contact</a>
+								<a
+									href="feedback.html"
+									class="hover:text-blue-400 text-lg"
+									>Feedback</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -271,7 +306,7 @@
 						<div class="flex space-x-4 mt-4">
 							<!-- Social Icons -->
 							<a
-								href="#"
+								href="https://www.facebook.com/profile.php?id=61565849173296"
 								aria-label="Facebook"
 								class="hover:text-blue-400"
 							>
@@ -287,7 +322,7 @@
 								</svg>
 							</a>
 							<a
-								href="#"
+								href="https://x.com/fasalsandhi1"
 								aria-label="Twitter"
 								class="hover:text-blue-400"
 							>
@@ -303,7 +338,7 @@
 								</svg>
 							</a>
 							<a
-								href="#"
+								href="https://www.instagram.com/fasalsandhi/"
 								aria-label="Instagram"
 								class="hover:text-blue-400"
 							>
@@ -323,12 +358,14 @@
 
 					<!-- Copyright -->
 					<div class="flex flex-col items-center space-x-4">
-						<p class="text-sm">
+						<p class="text-lg">
 							&copy; 2024 FasalSandhi. All rights reserved.
 						</p>
 						<!-- Google Translate Widget -->
-						<div id="google_translate_element" class="flex items-center">
-						</div>
+						<!-- <div
+							id="google_translate_element"
+							class="flex items-center"
+						></div> -->
 						<script type="text/javascript">
 							function googleTranslateElementInit() {
 								new google.translate.TranslateElement(
@@ -347,6 +384,65 @@
 							type="text/javascript"
 							src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
 						></script>
+
+						<!-- JavaScript to Handle Conditional Fields -->
+						<script>
+							const roleSelect = document.getElementById("role");
+							const aadharField =
+								document.getElementById("aadhar-field");
+							const fssaiField = document.getElementById("fssai-field");
+
+							// Show or hide fields based on role selection
+							roleSelect.addEventListener("change", function () {
+								if (roleSelect.value === "farmer") {
+									aadharField.classList.remove("hidden");
+									fssaiField.classList.add("hidden");
+								} else if (roleSelect.value === "contractor") {
+									fssaiField.classList.remove("hidden");
+									aadharField.classList.add("hidden");
+								} else {
+									// Hide both fields if no role is selected
+									aadharField.classList.add("hidden");
+									fssaiField.classList.add("hidden");
+								}
+							});
+							// Handle form submission with an alert
+							// const registerForm = document.getElementById('register-form');
+							registerForm.addEventListener("submit", function (event) {
+								event.preventDefault(); // Prevent form from submitting to server
+
+								// Show success alert
+								alert(
+									"You have successfully registered. Please login to continue."
+								);
+								// Redirect to the login page
+								window.location.href = "index.html";
+
+								// Here you would typically send the form data to the server
+								// Example:
+								// fetch('/api/register', {
+								//     method: 'POST',
+								//     body: new FormData(registerForm),
+								// }).then(response => console.log('User registered', response));
+							});
+							const loginDiv = document.getElementById("loginRegister");
+
+							// Assuming you already have a login form and login logic
+							loginForm.addEventListener("submit", function (event) {
+								event.preventDefault();
+
+								// Logic to check if the login is successful
+								const isLoginSuccessful = true; // Replace with actual login success logic
+
+								if (isLoginSuccessful) {
+									// Hide the login div
+									loginDiv.style.display = "none";
+
+									// You can also redirect to another page or show a dashboard, etc.
+									// window.location.href = '/dashboard';
+								}
+							});
+						</script>
 					</div>
 				</div>
 			</div>

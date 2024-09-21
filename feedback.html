@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold mb-4">We Value Your Feedback</h1>
+        <p class="text-gray-600 mb-6">Please take a moment to tell us about your experience. Your feedback helps us improve our platform.</p>
+
+        <!-- Feedback Form -->
+        <form id="feedback-form" class="space-y-6">
+            <!-- Rating -->
+            <div>
+                <label for="rating" class="block text-sm font-medium text-gray-700">Rate Your Experience</label>
+                <select id="rating" name="rating" class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="1">1 - Very Poor</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="3">3 - Average</option>
+                    <option value="4">4 - Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+            </div>
+
+            <!-- Feedback Text -->
+            <div>
+                <label for="feedback" class="block text-sm font-medium text-gray-700">Your Feedback</label>
+                <textarea id="feedback" name="feedback" rows="4" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Let us know your thoughts..."></textarea>
+            </div>
+
+            <!-- Name and Email (Optional) -->
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Your Name (optional)</label>
+                <input type="text" id="name" name="name" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter your name">
+
+                <label for="email" class="block text-sm font-medium text-gray-700 mt-4">Your Email (optional)</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter your email">
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit" class="w-56 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                    Submit Feedback
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('feedback-form');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();  // Prevent actual form submission
+            alert('Thank you for your feedback!');
+            window.location.href = 'index.html';  // Redirect to homepage
+            form.reset();  // Optionally reset the form fields
+        });
+    </script>
+</body>
+</html>
