@@ -91,12 +91,13 @@
 			</div>
 
 			<!-- Login/Register Section -->
-			<div id="loginRegister"
+			<div
+				id="loginRegister"
 				class="w-full max-w-md bg-[#FDFFC6] bg-opacity-[0.85] p-8 rounded-lg shadow-lg"
 			>
 				<!-- Login Form -->
 				<div id="loginForm" class="h-[570px]">
-					<br><br><br>
+					<br /><br /><br />
 					<h2 class="text-2xl font-semibold mb-6 text-center">Login</h2>
 					<form>
 						<div class="mb-4">
@@ -357,93 +358,90 @@
 					</div>
 
 					<!-- Copyright -->
-					<div class="flex flex-col items-center space-x-4">
+					<div class="items-center space-x-4">
 						<p class="text-lg">
 							&copy; 2024 FasalSandhi. All rights reserved.
 						</p>
-						<!-- Google Translate Widget -->
-						<!-- <div
-							id="google_translate_element"
-							class="flex items-center"
-						></div> -->
-						<script type="text/javascript">
-							function googleTranslateElementInit() {
-								new google.translate.TranslateElement(
-									{
-										pageLanguage: "en",
-										includedLanguages: "en,hi", // Hindi and English
-										layout:
-											google.translate.TranslateElement.InlineLayout
-												.SIMPLE,
-									},
-									"google_translate_element"
-								);
-							}
-						</script>
-						<script
-							type="text/javascript"
-							src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-						></script>
-
-						<!-- JavaScript to Handle Conditional Fields -->
-						<script>
-							const roleSelect = document.getElementById("role");
-							const aadharField =
-								document.getElementById("aadhar-field");
-							const fssaiField = document.getElementById("fssai-field");
-
-							// Show or hide fields based on role selection
-							roleSelect.addEventListener("change", function () {
-								if (roleSelect.value === "farmer") {
-									aadharField.classList.remove("hidden");
-									fssaiField.classList.add("hidden");
-								} else if (roleSelect.value === "contractor") {
-									fssaiField.classList.remove("hidden");
-									aadharField.classList.add("hidden");
-								} else {
-									// Hide both fields if no role is selected
-									aadharField.classList.add("hidden");
-									fssaiField.classList.add("hidden");
-								}
-							});
-							// Handle form submission with an alert
-							// const registerForm = document.getElementById('register-form');
-							registerForm.addEventListener("submit", function (event) {
-								event.preventDefault(); // Prevent form from submitting to server
-
-								// Show success alert
-								alert(
-									"You have successfully registered. Please login to continue."
-								);
-								// Redirect to the login page
-								window.location.href = "index.html";
-
-								// Here you would typically send the form data to the server
-								// Example:
-								// fetch('/api/register', {
-								//     method: 'POST',
-								//     body: new FormData(registerForm),
-								// }).then(response => console.log('User registered', response));
-							});
-							const loginDiv = document.getElementById("loginRegister");
-
-							// Assuming you already have a login form and login logic
-							loginForm.addEventListener("submit", function (event) {
-								event.preventDefault();
-
-								// Logic to check if the login is successful
-								const isLoginSuccessful = true; // Replace with actual login success logic
-
-								if (isLoginSuccessful) {
-									// Hide the login div
-									loginDiv.style.display = "none";
-
-									// You can also redirect to another page or show a dashboard, etc.
-									// window.location.href = '/dashboard';
-								}
-							});
-						</script>
 					</div>
+					<!-- Google Translate Widget -->
+					<div id="google_translate_element" class=""></div>
+					<script type="text/javascript">
+						function googleTranslateElementInit() {
+							new google.translate.TranslateElement(
+								{
+									pageLanguage: "en",
+									// Hindi and English and Kannada and Tamil and Telugu and Gujarati
+                                    includedLanguages: "en,hi,kn,ta,te,gu",
+									layout:
+										google.translate.TranslateElement.InlineLayout
+											.SIMPLE,
+								},
+								"google_translate_element"
+							);
+						}
+					</script>
+					<script
+						type="text/javascript"
+						src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+					></script>
+
+					<!-- JavaScript to Handle Conditional Fields -->
+					<script>
+						const roleSelect = document.getElementById("role");
+						const aadharField = document.getElementById("aadhar-field");
+						const fssaiField = document.getElementById("fssai-field");
+
+						// Show or hide fields based on role selection
+						roleSelect.addEventListener("change", function () {
+							if (roleSelect.value === "farmer") {
+								aadharField.classList.remove("hidden");
+								fssaiField.classList.add("hidden");
+							} else if (roleSelect.value === "contractor") {
+								fssaiField.classList.remove("hidden");
+								aadharField.classList.add("hidden");
+							} else {
+								// Hide both fields if no role is selected
+								aadharField.classList.add("hidden");
+								fssaiField.classList.add("hidden");
+							}
+						});
+						// Handle form submission with an alert
+						// const registerForm = document.getElementById('register-form');
+						registerForm.addEventListener("submit", function (event) {
+							event.preventDefault(); // Prevent form from submitting to server
+
+							// Show success alert
+							alert(
+								"You have successfully registered. Please login to continue."
+							);
+							// Redirect to the login page
+							window.location.href = "index.html";
+
+							// Here you would typically send the form data to the server
+							// Example:
+							// fetch('/api/register', {
+							//     method: 'POST',
+							//     body: new FormData(registerForm),
+							// }).then(response => console.log('User registered', response));
+						});
+						const loginDiv = document.getElementById("loginRegister");
+
+						// Assuming you already have a login form and login logic
+						loginForm.addEventListener("submit", function (event) {
+							event.preventDefault();
+
+							// Logic to check if the login is successful
+							const isLoginSuccessful = true; // Replace with actual login success logic
+
+							if (isLoginSuccessful) {
+								// Hide the login div
+								loginDiv.style.display = "none";
+
+								// You can also redirect to another page or show a dashboard, etc.
+								// window.location.href = '/dashboard';
+							}
+						});
+					</script>
 				</div>
 			</div>
 		</footer>
