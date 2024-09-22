@@ -28,6 +28,7 @@ The Contract Farming Marketplace is a comprehensive online platform that connect
     ```bash
     git clone https://github.com/ksidharth8/FasalSandhi.git
     ```
+Or download the zip file and extract it.
 
 2. Navigate to the project directory:
 
