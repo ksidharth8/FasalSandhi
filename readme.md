@@ -61,3 +61,9 @@ If using React or another frontend framework, navigate to the `client` folder an
 cd client
 npm install
 ```
+
+## Deployment
+
+The project is deployed on Vercel. You can access it using the following link:
+
+[![Vercel](https://vercel.com/button)](https://fasal-sandhi-fs.vercel.app)
