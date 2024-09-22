@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FasalSandhi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-[rgb(103,129,97)] bg-opacity-100 shadow-lg py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex">
+                <!-- Logo and Site Name -->
+                <a href="index.html" class="flex items-center">
+                    <img
+                        src="/assets/logo-db359b16.png"
+                        alt="Logo"
+                        class="h-10 w-10 mr-2 rounded-full"
+                    />
+                    <span class="text-2xl font-bold text-gray-800"
+                        >FasalSandhi</span
+                    >
+                </a>
+            </div>
+            <ul class="flex space-x-6 text-lg">
+                <li>
+                    <a
+                        href="index.html"
+                        class="text-[#EEF1D8] hover:text-blue-500"
+                        >Home</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="farmer-dashboard.html"
+                        class="text-[#EEF1D8] hover:text-blue-500"
+                        onclick="window.open('contractor-dashboard.html');
+"
+                        >Marketplace</a
+                    >
+                </li>
+                <li>
+                    <a href="blog.html" class="text-[#EEF1D8] hover:text-blue-500"
+                        >Blog</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="about.html"
+                        class="text-[#EEF1D8] hover:text-blue-500"
+                        >About Us</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="contact.html"
+                        class="text-[#EEF1D8] hover:text-blue-500"
+                        >Contact Us</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-80" style="background-image: url('https://source.unsplash.com/1600x900/?fields,farming');">
+        <div class="bg-[#BFAD6A] bg-opacity-50 h-full flex items-center justify-center">
+            <div class="text-center text-[#737154] px-6">
+                <h2 class="text-4xl font-bold mb-4">About FasalSandhi</h2>
+                <p class="text-lg">Empowering farmers with assured market access through innovative contract farming solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="container mx-auto py-12">
+        <div class="text-center">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6">Who We Are</h3>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                At FasalSandhi, we believe in fostering strong and transparent relationships between farmers and buyers. 
+                Our platform is designed to reduce market uncertainties and help farmers find reliable buyers for their crops.
+                By offering tools for secure contracts, price negotiation, and timely payments, we aim to create an ecosystem where farmers can focus on growing, while we take care of connecting them with trustworthy buyers.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto text-center">
+            <div class="mb-8">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                <p class="text-gray-600 text-lg">
+                    To provide a stable and assured market for farmers through secure and transparent contract farming agreements,
+                    ensuring income stability and reducing market risks.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Our Vision</h3>
+                <p class="text-gray-600 text-lg">
+                    A world where every farmer has guaranteed access to a fair and reliable marketplace for their produce,
+                    and where technology bridges the gap between farmers and buyers to build lasting partnerships.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="container mx-auto py-12">
+        <h3 class="text-3xl font-bold text-gray-800 text-center mb-10">Meet the Team</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Team Member 1 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden text-center flex flex-col items-center">
+                <img src="data:image/jpeg;base64,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" alt="Team Member" class="w-[50%] h-48 object-fill">
+                <div class="p-6">
+                    <h4 class="text-2xl font-bold mb-2">Rachit Naman</h4>
+                    <p class="text-gray-600 mb-4">Front-End Developer</p>
+                    <p class="text-gray-600">Rachit is responsible for the visual structure and user experience of our website. His expertise in front-end development ensured a seamless and user-friendly interface for both farmers and contractors.
+                        </p>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden text-center flex flex-col items-center">
+                <img src="data:image/jpeg;base64,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" alt="Team Member" class="w-[50%] h-48 object-fill">
+                <div class="p-6">
+                    <h4 class="text-2xl font-bold mb-2">Kumar Sidharth</h4>
+                    <p class="text-gray-600 mb-4">Front-End Developer</p>
+                    <p class="text-gray-600">Kumar partnered with Rachit to develop the responsive front-end of our platform. His skills in coding and design have made our website dynamic, engaging, and easy to navigate.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden text-center flex flex-col items-center">
+                <img src="data:image/jpeg;base64,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" alt="Team Member" class="w-[50%] h-48 object-fill">
+                <div class="p-6">
+                    <h4 class="text-2xl font-bold mb-2">Soneesh Srivastava</h4>
+                    <p class="text-gray-600 mb-4">Back-End Developer</p>
+                    <p class="text-gray-600">Soneesh handled the server-side logic, ensuring our system works efficiently behind the scenes. He implemented core functionalities that allow for smooth transactions and secure data management.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden text-center flex flex-col items-center">
+                <img src="data:image/jpeg;base64,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" alt="Team Member" class="w-[50%] h-48 object-fill">
+                <div class="p-6">
+                    <h4 class="text-2xl font-bold mb-2">Rishit Aryan</h4>
+                    <p class="text-gray-600 mb-4">Back-End Developer</p>
+                    <p class="text-gray-600">Rishit worked alongside Soneesh to build and optimize the backend infrastructure. His work ensures that data is processed quickly and securely, allowing users to experience fast and reliable service.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 5 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden text-center flex flex-col items-center">
+                <img src="data:image/jpeg;base64,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" alt="Team Member" class="w-[50%] h-48 object-fill">
+                <div class="p-6">
+                    <h4 class="text-2xl font-bold mb-2">Alka Singh</h4>
+                    <p class="text-gray-600 mb-4">Web Design & Creative</p>
+                    <p class="text-gray-600">Alka has been instrumental in shaping the visual identity of Assured Contract Farming. From color schemes to layouts, her creative insights make our platform visually appealing and accessible to all users.</p>
+                </div>
+            </div>
+
+            <!-- Team Member 6 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden text-center flex flex-col items-center">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+NDI0PkxERExfWl98fKcBBgYGBgcGBwgIBwoLCgsKDw4MDA4PFhAREBEQFiIVGRUVGRUiHiQeHB4kHjYqJiYqNj40MjQ+TERETF9aX3x8p//CABEIAPoA/QMBIgACEQEDEQH/xAAsAAEBAQEBAQEAAAAAAAAAAAAABgUEAwIBAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAKqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPA92L4lAn+k13n6AAAAAAAAAAAAyz4wPkAAetLK/ZaubpAAAAAAAAAAPiP258AAAA7qqHrTrAAAAAAAAAPkluL9/AAAABtYvWVoAAAAAAAAHJ15pMgAAAAfXyLh4+wAAAAAAAAyNfEMIAAAAAFb18HeAAAAAAAAJ+gmTNAAAAABSamLtAAAAAAAACOp5EAAAAAA1KSMsT6AAAAAAABmTtr5kWoeEzH18gAA9TyaugYFR0fQAAAAAAAAA/P2ZOLyAABo5wuGNsgAAAAAAAAA5D9kdDPAAAAPu0iNgoHj7AAAAAAAzDT4MHkNDPAAAAAAD91MoV/TEaBTuLtAABxnXlYngdPMAAAAAAAAAADu4RU98P2lW8vUStV4katBFrQRa0EWtBFrQRa0EWtBFrQRa0EWtBFrQRa0EWtBFrQYu95ep//xAAC/9oADAMBAAIAAwAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgQgAAAAAAAAAAAQzzzgAAAAAAAAAAAzzzzwwAAAAAAAAATzzzzywAAAAAAAABDzzzzygAAAAAAAAADzzzzzwAAAAAAAAADzzzzzyAAAAAAAABTzzzzzwAAAAAAAAATjzzzzyAAAAAAAAAATzzzwAAAAAAAAAABTzzzyggAAAAAARxzzzzzzzwQgAARxzzzzzzzzzzywwgTzzzzzzzzzzzzzyj/xAAC/9oADAMBAAIAAwAAABDzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzTzzzzzzzzzzzzzz774rTzzzzzzzzzwb7777jzzzzzzzzyj777777zzzzzzzzyj777765zzzzzzzzyz777775zzzzzzzzzj777777Tzzzzzzzx7777775Tzzzzzzzyj77777qzzzzzzzzzzz7767Tzzzzzzzzzx77776rTzzzzzzCx77777767TTzzhx777777777775rTD77777777777775T/xAAUEQEAAAAAAAAAAAAAAAAAAACA/9oACAECAQE/AAB//8QAFBEBAAAAAAAAAAAAAAAAAAAAgP/aAAgBAwEBPwAAf//EADoQAAECAggDBAYKAwAAAAAAAAECAwAEBRESFCFAU5IwQVEiMTJxEyBSYYGhEBUjJEJicpGxwTNw8P/aAAgBAQABPwL/AFa9MMsjtrqhdMJ/A0T5x9cPaaI+uHtJMN0syfGgp+cIcbcTWhQIzU7SPo622vFzPSFKUo1qJJ6+q084yq0hVUSc6mYFXcvmMxSM36FNhB7avkOAhakKCkmoiJWYTMNBXP8AEPfllrS2hSldwFcOuqdcUtXM8GQmPQvivwqwOWpZ6ptDftd/w4ci96aWQT3jA5WkHLc057sOHQ7nbcb64/tlFKqSpXQQTWSevDkV2Jtrzq/fKT5syjx91XESbKgehrgZOlT9181Diy5tS7J/IMnTH+Jofn/riyJrk2f05OmTgwPPi0aa5Nv45OmD9q0Py8WiT91I6LOTpRVc2R0SBxaHVg8nyOTmV+kmHVdVcWil2Zkp9pP8ZKcfDLC1c+XnxmnC04hfQwhSVpCgawRkaQk1v1KQrEfh5QtC0KsqSQeKyw68qpCa4lJcy7Vm3X/3LJONNuipaARDtENHwLKfnC6Kmk91lXxhSVIUUqGI9dplx5VltNZhFETB8Skp+cNUVLo8Va/OEpSkVAVDKnDGH1WnnVdVn16LWEzQrPekjMUhOF5ZQk9gfPg0ZOFX2Lh/Sf6y0456OWdVzqqHx4Tay2tKxyNcJIIByj84wz4lY+yIm59cwLFmpPDl6UKAEOprA5iGZhl4VoWD/ORfpCXawrtHoIfpGYdwrsDoOMCQawaoYpV5GDgtj5wxNsP+BePTnxX6TYbwR2z8ofnZh7vVUOgybFJTDWCu2PfDE9LvYWqldDwCQBicIfpVpGDYtnryh6afe8a8OnLLsT8wzhXaT0MMUjLu1A9hXQ+rOTaZdFfeo9wh6YefNa1fDlm5eeeYwrtJ9kwy6h5tK0dx+mkXCubc92AztDrNt1HutfSWGFEksoJr6RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0RdZbQb2iLrLaDe0QhppBJS2keQ+j/8QAKhAAAQIDBwQDAAMAAAAAAAAAAQARITFAMEFRYXGBkSChseEQwfBw0fH/2gAIAQEAAT8h/ix07BYBedkKd4NlE+4oPR5SobncizxUDVPYna+6ITRMi56XKi7HVPcwh7BUFkg9lg4+TgoZYSYFMOEzpspzzzYZWMfv1g0zUmZ9HtZuufmhS5Oh7e7NksyAfKkEYvDwimZk53s3jcX+2kzc70LQoOYOCIEAi+PNG23BcRtc8fDRlrPC1GoyBqDtdJEe9HoYz39Woz/qTUf66I2uljR2GZW0lavhfjeKicZEG1rYRZjOrKKaIHWhDwTZ/hgURBO4i1fzxG4alDZkbucA9CZapGCi5vAwK6NkzymxBmI64fEHaUF/YcUSebBwggIEgA1KQAkQAJkoAwuCAdT1sMARBPTxL3dfF9jM6QHNlTDjC3IQWU2wXBBBIhxvSP4d1hTNA+7TJazbsphOYZLOCBc2oIJ3gf7JT2H6s7YeKISIgQm7MMlDQM+FoJADkwF6fNh+ydRtsPdE7F71HDJm5TeGyzYHRAAmSYJ64Q91OTJhwp27lPgp/HcdD0u53N6T5ZF0obVZoOXpPGCKV9Bw+HWAvbVr4yPIIfJ4UiJEmt8888888888888888888888888888LS2mAeEF//xAApEAEAAQEHBAICAwEAAAAAAAABEQAhMDFBYcHwQFFxgZGhILEQYOHR/9oACAEBAAE/ED+wH9NAnaTi+IWtKDsBPqTQeS9tEk00Jpc0F2oaIMHfHh7OnVCuAsxk7HeiqHmSPf4lC/ELR7HBKWnJ5bE+0vS7Fx8YY4Xs4FLLM/m8mCeT/wA0oRw8bP8Ag4l4XU1xV0FNA+IDIaBZcpZFTskv0NHSvEz+vj3dNO9WSj+tn2dKzhlz9/7XbWceeqOkYTr/AIE03sobVS/u7tZhXgD0lZiGF7l5sxBzqp2rBaAOjY0x/wCV5SRO5QzMs7zDo4+8rwzpzco/Cl0XJO5+EBeiCej3PoX8xvWaj4gXRiEyfVO+9NY2i+xHozEZkWhjelggPzB6KAIaebZHxXtdXO9ltYWZMR7LKGcIbt0JVNgLCzmpiqojP++S9EO57OvhFMG+q8QMjommepo8OJ6qYy4q5R9lviNMUaejD6/N5bFyISiZUqLSXEF+MgpoQvd9aibxAwPRdF2PIJRAGtC4CzMSPztbFKAXEP4HTMVHkYMU+4OBcJOtWuX0JUxJ7hh033ryEU8VtZcsTB7WWHsspH5N4BPSDhl/rmBSGD9tKwS3TaRUfmrJJQSqk7QxY8itOgmjvKntFC5OzIpria17s3qPLlb4DUDwaSoYAzfpW4PwdmAlTAFWmNfBda203zceiCAKDBFE8VDlw5YJpUTwUI6ODcDmyRAHdWpLhzWD+6Os2Uln+mPTjnGzGB2xipl0zAFQIklp+AICcSxLNXI08lKQ+HueqscQ90fi3FD3xVLDRzxzH2T+UtLOFkA60SUlBrT/AIcGlizXZ5UriW1cS2riW1cS2riW1cS2riW1cS2riW1cS2riW1cS2riW1cS2riW1cS2riW1cS2riW1cS2riW1cS2riW1cS2riW1cS2riW1cS2pXbgr4nCRWCv//Z" alt="Team Member" class="w-[50%] h-48 object-fill">
+                <div class="p-6">
+                    <h4 class="text-2xl font-bold mb-2">Kashish Kumari</h4>
+                    <p class="text-gray-600 mb-4">Web Design & Creative</p>
+                    <p class="text-gray-600">Kashish contributed her design expertise by focusing on user-centered design principles. Her attention to detail helped in creating a platform that is both aesthetically pleasing and intuitive for all stakeholders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+		<footer class="bg-[#737154] text-white py-2 h-28">
+			<div class="container mx-auto px-4">
+				<div class="flex justify-around items-center">
+					<!-- Footer Links -->
+					<div>
+						<ul class="space-y-2">
+							<li>
+								<a href="terms.html" class="hover:text-blue-400 text-lg"
+									>Terms & Conditions</a
+								>
+							</li>
+							<li>
+								<a
+									href="privacy.html"
+									class="hover:text-blue-400 text-lg"
+									>Privacy Policy</a
+								>
+							</li>
+							<li>
+								<a
+									href="feedback.html"
+									class="hover:text-blue-400 text-lg"
+									>Feedback</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Footer Logo and Social Media Icons -->
+					<div class="flex flex-col items-center">
+						<h1 class="text-2xl font-bold">FasalSandhi</h1>
+						<div class="flex space-x-4 mt-4">
+							<!-- Social Icons -->
+							<a
+								href="https://www.facebook.com/profile.php?id=61565849173296"
+								aria-label="Facebook"
+								class="hover:text-blue-400"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="h-6 w-6"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M12 2.04C6.48 2.04 2 6.52 2 12.02c0 4.99 3.66 9.12 8.43 9.88v-6.99H8.07V12h2.36V9.85c0-2.33 1.4-3.6 3.51-3.6 1.02 0 2.09.18 2.09.18v2.3h-1.18c-1.17 0-1.53.73-1.53 1.48V12h2.66l-.43 2.91h-2.23v6.99C18.34 21.14 22 17 22 12.02c0-5.5-4.48-9.98-10-9.98z"
+									/>
+								</svg>
+							</a>
+							<a
+								href="https://x.com/fasalsandhi1"
+								aria-label="Twitter"
+								class="hover:text-blue-400"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="h-6 w-6"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M22.46 6.03c-.77.34-1.6.57-2.47.68a4.33 4.33 0 001.9-2.4c-.84.5-1.77.86-2.76 1.06a4.28 4.28 0 00-7.29 3.9A12.14 12.14 0 013 4.89a4.28 4.28 0 001.33 5.71 4.27 4.27 0 01-1.94-.54v.05c0 2.17 1.54 3.99 3.59 4.4a4.25 4.25 0 01-1.93.07c.55 1.7 2.14 2.94 4.02 2.98a8.61 8.61 0 01-6.34 1.78 12.15 12.15 0 006.57 1.93c7.88 0 12.2-6.53 12.2-12.2 0-.19-.01-.39-.02-.58A8.64 8.64 0 0022.46 6.03z"
+									/>
+								</svg>
+							</a>
+							<a
+								href="https://www.instagram.com/fasalsandhi/"
+								aria-label="Instagram"
+								class="hover:text-blue-400"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="currentColor"
+									class="h-6 w-6"
+									viewBox="0 0 24 24"
+								>
+									<path
+										d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.33 3.608 1.305.975.975 1.243 2.242 1.305 3.608.058 1.265.069 1.645.069 4.849s-.011 3.584-.069 4.849c-.062 1.366-.33 2.633-1.305 3.608-.975.975-2.242 1.243-3.608 1.305-1.265.058-1.645.069-4.849.069s-3.584-.011-4.849-.069c-1.366-.062-2.633-.33-3.608-1.305-.975-.975-1.243-2.242-1.305-3.608-.058-1.265-.069-1.645-.069-4.849s.011-3.584.069-4.849c.062-1.366.33-2.633 1.305-3.608.975-.975 2.242-1.243 3.608-1.305 1.265-.058 1.645-.069 4.849-.069M12 0C8.741 0 8.332.012 7.053.071 5.775.13 4.507.374 3.47 1.412 2.432 2.451 2.188 3.719 2.129 5c-.059 1.279-.071 1.688-.071 4.947s.012 3.668.071 4.947c.059 1.279.303 2.547 1.341 3.585s2.306 1.282 3.585 1.341c1.279.059 1.688.071 4.947.071s3.668-.012 4.947-.071c1.279-.059 2.547-.303 3.585-1.341s1.282-2.306 1.341-3.585c.059-1.279.071-1.688.071-4.947s-.012-3.668-.071-4.947c-.059-1.279-.303-2.547-1.341-3.585S18.771.13 17.492.071C16.213.012 15.804 0 12 0zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.879 0 1.44 1.44 0 012.879 0z"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<!-- Copyright -->
+					<div class="flex flex-col items-center space-x-4">
+						<p class="text-lg">
+							&copy; 2024 FasalSandhi. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+</body>
+</html>

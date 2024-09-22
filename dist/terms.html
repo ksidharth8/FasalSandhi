@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Terms & Conditions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Main Container -->
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl w-full space-y-8 bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-extrabold text-gray-900 text-center">Terms & Conditions</h2>
+
+            <!-- Terms Content -->
+            <div class="terms-content text-gray-600 overflow-auto h-72">
+                <h3 class="text-lg font-semibold mb-4">1. Introduction</h3>
+                <p>Welcome to our platform! By accessing or using our services, you agree to be bound by these terms and conditions. Please read them carefully.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">2. User Responsibilities</h3>
+                <p>You are responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">3. Account Suspension</h3>
+                <p>We reserve the right to suspend or terminate your access to the platform at any time, without notice, if you violate these terms.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">4. Limitation of Liability</h3>
+                <p>Our platform is provided "as is" without any warranties of any kind. We will not be liable for any damages arising from your use of the platform.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">5. Amendments to Terms</h3>
+                <p>We reserve the right to modify these terms at any time. Continued use of the platform signifies your acceptance of any changes.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">6. Governing Law</h3>
+                <p>These terms will be governed by and construed in accordance with the laws of the jurisdiction in which we operate.</p>
+            </div>
+
+            <!-- Checkbox for Acceptance -->
+            <div class="mt-6">
+                <label class="flex items-center">
+                    <input id="accept-terms" type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
+                    <span class="ml-2 text-sm text-gray-600">I agree to the Terms & Conditions</span>
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mt-6">
+                <button id="submit-btn" class="w-56 bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"  disabled>
+                    Accept & Proceed
+                </button>
+            </div>
+
+            <!-- Warning message -->
+            <div id="warning" class="mt-4 text-center text-red-600 hidden">
+                Please accept the Terms & Conditions before proceeding.
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to Handle Checkbox and Button -->
+    <script>
+        const acceptTermsCheckbox = document.getElementById('accept-terms');
+        const submitButton = document.getElementById('submit-btn');
+        const warningMessage = document.getElementById('warning');
+
+        acceptTermsCheckbox.addEventListener('change', function () {
+            if (acceptTermsCheckbox.checked) {
+                submitButton.disabled = false;
+                warningMessage.classList.add('hidden');
+            } else {
+                submitButton.disabled = true;
+            }
+        });
+
+        submitButton.addEventListener('click', function () {
+            if (!acceptTermsCheckbox.checked) {
+                warningMessage.classList.remove('hidden');
+            } else {
+                alert('Thank you for accepting the Terms & Conditions!');
+                // Redirect to another page if needed
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Farmer Dashboard</title>
+		<title>Contractor Dashboard</title>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script type="module" crossorigin src="/assets/contractor-dashboard-20924381.js"></script>
+		<link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-ec808ebb.js">
 	</head>
 	<body class="bg-[#e9ebc5]">
 		<nav class="bg-[rgb(103,129,97)] bg-opacity-100 shadow-lg py-4">
@@ -13,7 +15,7 @@
 					<!-- Logo and Site Name -->
 					<a href="index.html" class="flex items-center">
 						<img
-							src="assets/Images/logo.png"
+							src="/assets/logo-db359b16.png"
 							alt="Logo"
 							class="h-10 w-10 mr-2 rounded-full"
 						/>
@@ -62,60 +64,88 @@
 			</div>
 		</nav>
 
-		<!-- Farmer Dashboard Header -->
+		<!-- Contractor Dashboard Header -->
 		<header class="p-4 text-center mt-8">
-			<h1 class="text-3xl font-bold">Farmer Dashboard</h1>
+			<h1 class="text-3xl font-bold">Contractor Dashboard</h1>
 		</header>
 
 		<!-- Dashboard Content -->
 		<div class="container mx-auto py-8">
-			<!-- Section: Available Contracts -->
+			<!-- Section: Post New Contract -->
 			<section class="mb-8">
-				<h2 class="text-2xl font-bold mb-4">Available Contracts</h2>
-				<div
-					class="grid1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6"
-				>
-					<!-- Contract Card -->
-					<!-- Ongoing contracts will be dynamically added here -->
+				<h2 class="text-2xl font-bold mb-4">Post a New Contract</h2>
+				<div class="w-[60%]">
+					<form
+						id="postContractForm"
+						class="bg-white p-4 shadow rounded-lg"
+					>
+						<div class="mb-4">
+							<label class="block text-gray-700">Crop</label>
+							<input
+								type="text"
+								class="w-full p-2 border rounded-lg"
+								placeholder="Enter crop type"
+							/>
+						</div>
+						<div class="mb-4">
+							<label class="block text-gray-700">Location</label>
+							<input
+								type="text"
+								class="w-full p-2 border rounded-lg"
+								placeholder="Enter location"
+							/>
+						</div>
+						<div class="mb-4">
+							<label class="block text-gray-700">Price</label>
+							<input
+								type="number"
+								class="w-full p-2 border rounded-lg"
+								placeholder="Enter price per quintal"
+							/>
+						</div>
+						<div class="mb-4">
+							<label class="block text-gray-700">Description</label>
+							<input
+								type="text"
+								class="w-full p-2 border rounded-lg"
+								placeholder="Enter description for the contract"
+							/>
+						</div>
+						<button
+							type="submit"
+							class="bg-[#85BF35] text-white py-2 px-4 rounded"
+						>
+							Post Contract
+						</button>
+					</form>
 				</div>
 			</section>
 
-			<!-- Section: Ongoing Contracts -->
-			<section class="mb-8">
-				<h2 class="text-2xl font-bold mb-4">Ongoing Contracts</h2>
-				<div
-					class="grid2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-				>
-					<!-- Contract Card -->
-					<!-- Ongoing contracts will be dynamically added here -->
+			<!-- Section: Posted Contracts -->
+			<section class="mt-2">
+				<h2 class="text-2xl font-bold mb-4">Posted Contracts</h2>
+				<div id="posted-contracts" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+					<!-- Contracts will be dynamically added here -->
 				</div>
 			</section>
 
-			<!-- Section: Payment Status -->
-			<section>
-				<h2 class="text-2xl font-bold mb-4">Payment Status</h2>
-				<table class="min-w-full bg-white shadow rounded-lg">
-					<thead>
-						<tr>
-							<th class="border px-4 py-2">Contract</th>
-							<th class="border px-4 py-2">Amount</th>
-							<th class="border px-4 py-2">Status</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="border px-4 py-2">Golden Wheat Contract</td>
-							<td class="border px-4 py-2">₹45,000</td>
-							<td class="border px-4 py-2">Pending</td>
-						</tr>
-						<tr>
-							<td class="border px-4 py-2">Sugarcane Contract</td>
-							<td class="border px-4 py-2">₹40,000</td>
-							<td class="border px-4 py-2">Received</td>
-						</tr>
-						<!-- Repeat for other payments -->
-					</tbody>
-				</table>
+			<!-- Section: Submitted Offers -->
+			<section class="mt-2">
+				<h2 class="text-2xl font-bold mb-4 mt-5">Submitted Offers</h2>
+				<div class="g1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<!-- Offer Card -->
+					<div class="bg-white p-4 shadow rounded-lg">
+						<h3 class="text-lg font-bold">Farmer: Ravi Kumar Yadav</h3>
+						<p>Crop: Wheat</p>
+						<p>Offer: ₹1400 per quintal</p>
+						<button
+							class="mt-4 bg-green-500 text-white py-2 px-4 rounded"
+						>
+							Accept Offer
+						</button>
+					</div>
+					<!-- Repeat for other offers -->
+				</div>
 			</section>
 		</div>
 
@@ -214,6 +244,6 @@
 			</div>
 		</footer>
 
-		<script type="module" src="js/farmer-dashboard.js"></script>
+		
 	</body>
 </html>

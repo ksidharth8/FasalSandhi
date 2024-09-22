@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Privacy Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Main Container -->
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl w-full space-y-8 bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-extrabold text-gray-900 text-center">Privacy Policy</h2>
+
+            <!-- Privacy Policy Content -->
+            <div class="privacy-content text-gray-600 overflow-auto h-72">
+                <h3 class="text-lg font-semibold mb-4">1. Introduction</h3>
+                <p>Your privacy is important to us. This privacy policy outlines the types of personal information we collect and how we use, store, and protect it.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">2. Information We Collect</h3>
+                <p>We may collect information such as your name, email address, phone number, and payment details when you register, make a purchase, or interact with our platform.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">3. How We Use Your Information</h3>
+                <p>We use your personal information to provide and improve our services, process transactions, send updates, and comply with legal obligations.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">4. Data Security</h3>
+                <p>We implement appropriate security measures to protect your personal information against unauthorized access, disclosure, alteration, or destruction.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">5. Sharing of Information</h3>
+                <p>We do not share your personal information with third parties except when necessary to fulfill our services, comply with legal obligations, or with your consent.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">6. Cookies and Tracking Technologies</h3>
+                <p>We use cookies and similar tracking technologies to enhance user experience and analyze site performance. You can manage your cookie preferences in your browser settings.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">7. Your Rights</h3>
+                <p>You have the right to access, update, or delete your personal information at any time. Contact us if you wish to exercise your rights or have any concerns about your data.</p>
+                <h3 class="text-lg font-semibold mt-6 mb-4">8. Changes to this Policy</h3>
+                <p>We may update this privacy policy from time to time. We will notify you of any significant changes via email or our platform.</p>
+            </div>
+
+            <!-- Checkbox for Acceptance -->
+            <div class="mt-6">
+                <label class="flex items-center">
+                    <input id="accept-policy" type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
+                    <span class="ml-2 text-sm text-gray-600">I agree to the Privacy Policy</span>
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="mt-6">
+                <button id="submit-btn" class="w-56 bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300" disabled>
+                    Accept and Proceed
+                </button>
+            </div>
+
+            <!-- Warning message -->
+            <div id="warning" class="mt-4 text-center text-red-600 hidden">
+                Please accept the Privacy Policy before proceeding.
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to Handle Checkbox and Button -->
+    <script>
+        const acceptPolicyCheckbox = document.getElementById('accept-policy');
+        const submitButton = document.getElementById('submit-btn');
+        const warningMessage = document.getElementById('warning');
+
+        acceptPolicyCheckbox.addEventListener('change', function () {
+            if (acceptPolicyCheckbox.checked) {
+                submitButton.disabled = false;
+                warningMessage.classList.add('hidden');
+            } else {
+                submitButton.disabled = true;
+            }
+        });
+
+        submitButton.addEventListener('click', function () {
+            if (!acceptPolicyCheckbox.checked) {
+                warningMessage.classList.remove('hidden');
+            } else {
+                alert('Thank you for accepting the Privacy Policy!');
+                // Redirect to another page if needed
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+
+</body>
+</html>
